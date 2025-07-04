@@ -1,20 +1,47 @@
-# Video Mirror Assistant
+# 🎬 Video Mirror Assistant
 
-This web-based tool helps users mirror tutorial videos from YouTube, Instagram, or uploaded files to follow steps with the correct orientation by flipping the video direction.
+A web-based tool that flips tutorial videos (YouTube, Instagram, or local files) to mirror orientation—ideal for dance, fitness, or DIY learners.
 
-## Features
-- Flip the orientation of uploaded videos or embedded tutorials.
-- Supports YouTube, Instagram, and local video files.
+---
 
-## Installation
-1. Clone the repository or download the ZIP file.
-2. Open `index.html` in a browser to run the tool.
+## 🎯 Problem It Solves
 
-## Usage
-1. **Upload a video**: Choose a video file to upload and watch it in mirrored orientation.
-2. **Embed a video**: Enter a YouTube or Instagram link in `loadVideo()` function and reload to see the mirrored video.
-3. **Flip Video**: Use the **Flip Video** button to toggle the mirror effect.
+Tutorials often show actions from the opposite side, confusing learners. This tool lets users mirror the video so movements align perfectly with their own.
 
-## License
-MIT License
+## 🧰 Features
+
+- Upload & play local video files
+- Mirror video horizontally in real-time
+- Support for embedded YouTube and Instagram videos
+- Optional backend to save flipped videos (OpenCV + Flask)
+- (Advanced) Pose detection using MediaPipe for gesture controls
+
+## 🛠️ Tech Stack
+
+- Frontend: HTML, CSS, JavaScript (HTML‑5 `<video>`)
+- Optional Backend: Python, OpenCV, Flask
+- Optional Gesture Control: MediaPipe
+
+
+## 📂 Project Structure
+
+video-mirror-assistant/
+├── index.html
+├── static/
+│ ├── style.css
+│ └── script.js
+├── app.py # Optional Flask backend
+├── flip_video.py # Optional OpenCV video-processing
+├── uploads/ # Backend uploads (if used)
+└── README.md
+
+
+Run server:
+python app.py
+
+
+
+
+
+
 
