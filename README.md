@@ -35,6 +35,12 @@ video-mirror-assistant/
 ├── uploads/ # Backend uploads (if used)
 └── README.md
 
+Test It Locally:
+Frontend
+Open index.html in your browser
+
+Backend:
+pip install flask opencv-python
 
 Run server:
 python app.py
